@@ -1,0 +1,1271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/wallpapersden.com_bmw-m-next-4k_1920x1080.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(./assets/wallpapersden.com_bmw-m-next-4k_1920x1080.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: rgb(179, 212, 191);  
+    background-attachment: fixed;
+}
+
+
+
+/* /*******************logo+navbar*************************************/
+
+.bmwlogo{
+    height: 120px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.motologo{
+    height: 200px;
+    margin-top: -22px;
+
+    
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between ;
+    margin-left: 40px;
+}
+
+.margin-between-logos{
+   font-size: 83px;
+   color: white;
+   margin-left: 19px;
+}
+
+header{
+    
+    z-index: 1000;
+    display: flex;
+    
+    justify-content: space-between;
+   
+}
+
+.navmenu{
+    padding: 50px;
+}
+
+.navmenu ul li{
+   display: inline-block;
+   margin-right: 50px;
+   color: #ffffff;
+   font-size: 17px;
+   font-family: 'Chivo Mono', monospace;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.navmenu ul li:hover{
+    background-color:rgb(232, 115, 115);
+    border-radius: 0.3rem;
+    transition: 0.1s;
+}
+
+.mobile-nav-icon{
+    scale: 2.3;
+    color: white;
+    margin-right: 12px;
+}
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+     display: none;
+}
+
+
+/*****************************************************/
+
+@media (max-width:980px) {
+    .mobile-navbar-btn{
+        margin: 50px;
+        display: block;
+        z-index: 999;
+    }
+
+    .logos{
+        width: 40%;
+        scale: 0.7;
+    }
+    .navmenu{
+       display: none;
+       width: 100%;
+       height: 100vh;
+       position: absolute;
+       background-color: rgb(224, 130, 130);
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 89;
+
+       /*transition*/
+
+       transform: translateY(100%);
+       transition: all 0.2s linear;
+       opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
+       
+
+    }
+    
+
+    .navmenu ul{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .navmenu ul li{
+        padding: 30px;
+       ;
+        
+    }
+
+    .navmenu ul li a{
+        font-size: 40px;
+        padding-left: 60px
+        
+    }
+
+    .active .navmenu{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+        display: none;
+    }
+    
+}
+
+
+
+/********************************************************/
+
+
+
+
+
+
+    
+
+    /**********************************************typing effect section******************************/
+
+
+    .typediv{
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    #type{
+        overflow: hidden; 
+        padding-right: 1.25rem; 
+        color: #ffffff; 
+        font-size: 3rem;
+        line-height: 1; 
+        white-space: nowrap; 
+        border-right-width: 4px; 
+        animation: 
+    typing 3s steps(19,end),
+    blink-caret .60s step-end infinite;
+    }
+
+    @keyframes typing {
+  from { width: 0 }
+  to { width: 33% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+}
+
+
+/************************************paragraph different colours*********************/
+
+#vita{
+    color: rgb(51, 160, 209);
+    font-size: 80px;
+    text-align: center;
+}
+
+#vita2{
+    color: rgb(51, 160, 209);
+    font-size: 60px;
+    text-align: center;
+}
+
+#vita3{
+    color:rgb(232, 115, 115);
+    font-size: 60px;
+    text-align: center;
+}
+
+#vita4{
+    color:rgb(3, 220, 159);
+    font-size: 60px;
+    text-align: center;
+
+}
+
+
+/***************************paragraph1****************************************/
+
+
+#para{
+   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#para1s{
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.497);
+    text-align: center;
+    font-size: 35px;
+    
+    
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter ;
+}
+
+#para1div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#life{
+    margin-top: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+        padding-right: 1.25rem; 
+        color: #ffffff; 
+        font-size: 3rem;
+        line-height: 1; 
+        white-space: nowrap; 
+        border-right-width: 4px; 
+        font-weight: bolder;
+
+}
+
+
+#gallery{
+    padding: 40px;
+    position: relative;
+    
+    
+}
+
+#sliding-gallery-for-phones{
+    display: none;
+}
+
+
+/*******************sliding gallary section********************/
+
+#custom-controls-gallery{
+    display: none;
+}
+
+
+
+/***************************iphone section***************************/
+
+#blondie{
+    height: 630px;
+    border-radius: 30px;
+    margin-top: 70px;
+}
+
+#blondielogo{
+    scale: 0.2;
+}
+
+#blondieiphone{
+
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    justify-content: ;
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+}
+
+#biphone{
+    position: relative;
+    height: 1000px;
+    margin-left: 170px;
+    
+    
+}
+
+
+#blondievideo{
+    position: absolute ;
+    height: 840px;
+    right: 250px;
+    border-radius: 70px;
+    
+}
+
+/********************************************************************/
+#video2{
+   
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+}
+/*****************************************************************/
+
+#photogrid{
+    margin-top: -300px;
+    padding: 120px;
+    background:linear-gradient(135deg, rgba(229, 229, 229,0.8), rgba(225,225,225,0.1));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+        box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+        transition: 0.5s;
+}
+
+#gridimg:hover{
+    transform: translateY(-16px);
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+        border: 20px transparent white;
+}
+
+#gridimg:hover{
+    transform: translateY(-16px);
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+        border: 20px transparent white;
+}
+
+#gridnew{
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    
+    background-color: rgb(224, 130, 130);
+   
+}
+
+#gridnew:hover{
+    transform: translateY(-16px);
+    transition: ease-in-out;
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+}
+
+#gride:hover{
+    transform: translateY(-16px);
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+    
+}
+
+#footback{
+    background-color:rgb(224, 130, 130);
+    border-radius: 30px;
+    padding: 40px;
+    margin-top: 70px;
+}
+
+#fontc{
+    height: 100px;
+    color: white;
+}
+
+
+
+#gridimg:hover{
+    transform: translateY(-16px);
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+        border: 20px transparent white;
+}
+
+/***************************************para 2 colourful***************************/
+
+#para2s{
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.497);
+    text-align: center;
+    font-size: 35px;
+    
+    
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter ;
+}
+
+#para2div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/***************************************grid 2 4 elements*******************************************/
+
+
+
+#gridnew{
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    
+    background-color: rgb(224, 130, 130);
+   
+}
+
+#gridnew:hover{
+    transform: translateY(-16px);
+    transition: ease-in-out;
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+}
+
+#gridimg{
+    height: 270px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    border: 20px transparent white;
+}
+
+#gridimg:hover{
+    transform: translateY(-16px);
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+        border: 20px transparent white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************************/
+/*****************************************************************************/
+/******************media-------------query------------------------------------*/
+
+
+@media (min-width: 250px) and (max-width: 400px){
+
+/* /*******************logo+navbar*************************************/
+
+.bmwlogo{
+    height: 100px;
+    margin-top: -9px;  
+}
+.motologo{
+    height: 160px;   
+}
+
+.logos{
+    display: flex;
+    width: auto;
+    margin-left: -15px;    
+}
+
+.margin-between-logos{
+   font-size: 70px;
+   color: white;
+   margin-left: 19px;
+}
+
+/* /*******************logo+navbar*************************************/
+
+
+
+    /**********************************************typing effect section******************************/
+
+
+    .typediv{
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: -100px;
+        
+
+    }
+
+    #type{
+        margin-left: 30px;
+        
+        overflow: hidden; 
+        padding-right: 1.25rem; 
+        color: #ffffff; 
+        font-size: 1.8rem;
+        line-height: 1; 
+        white-space: nowrap; 
+        border-right-width: 4px; 
+        animation: 
+    typing 3s steps(19,end),
+    blink-caret .60s step-end infinite;
+    }
+
+    @keyframes typing {
+  from { width: 0 }
+  to { width: 88% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+}
+
+
+
+    /**********************************************typing effect section******************************/
+
+/************************************paragraph different colours*********************/
+
+#vita{
+    color: rgb(51, 160, 209);
+    font-size: 60px;
+    text-align: center;
+}
+
+#vita2{
+    color: rgb(51, 160, 209);
+    font-size: 20px;
+    text-align: center;
+}
+
+#vita3{
+    color:rgb(232, 115, 115);
+    font-size: 20px;
+    text-align: center;
+}
+
+#vita4{
+    color:rgb(3, 220, 159);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/***************************paragraph1****************************************/
+
+
+#para{
+   max-width: 20%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#para1s{
+    
+    color: rgba(255, 255, 255, 0.497);
+    text-align: center;
+    font-size: 25px;
+    margin-top: -60px;
+    
+    
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter ;
+}
+
+#para1div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+   
+    
+}
+
+
+#life{
+    margin-top: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+        padding-right: 1.25rem; 
+        color: #ffffff; 
+        font-size: 2rem;
+        margin-left: 20px;
+        font-weight: bolder;
+
+}
+
+
+/******************************sliding gallary section------------------------*/
+
+#sliding-gallery-for-laptops{
+    display: none;
+}
+
+
+#custom-controls-gallery{
+    
+    margin-top: 40px;
+    padding: 30px;
+    display: block;
+}
+
+
+
+
+    /***************************iphone section***************************/
+    #blondie{
+        visibility: hidden;
+        height: 200px;
+        
+        
+       
+        
+    }
+    
+    #blondielogo{
+        scale: 0.2;
+    }
+    
+    #blondieiphone{
+        position: absolute;
+    height: 900px;
+        display: flex;
+        justify-content: center;
+        
+       
+        
+       
+       
+    }
+    
+    #biphone{
+        position: relative;
+        height: 500px;
+        right: 260px;
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    #blondievideo{
+        left: 150px;
+        position: relative;
+        height: 430px;
+        
+        border-radius: 50px;
+     
+      
+        
+    }
+    /***************************-------------------***************************/
+
+    /*********************grid of 12elements--------------------*/
+
+    #gridbap{
+        
+        position: relative;
+        padding: 20px;
+        margin-top: 750px;
+    }
+
+
+    #photogrid{
+        
+        padding: 20px;
+        background:linear-gradient(135deg, rgba(229, 229, 229,0.8), rgba(225,225,225,0.1));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 20px;
+            box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+            transition: 0.5s;
+    }
+    
+    
+    
+    
+    
+   
+    
+   
+    
+    
+    
+    #footback{
+        background-color:rgb(224, 130, 130);
+        border-radius: 30px;
+        padding: 40px;
+        margin-top: 70px;
+    }
+    
+    #fontc{
+        height: 100px;
+        color: white;
+    }
+    
+    
+    
+   
+
+
+    #para2s{
+        
+        font-size: 20px;
+        margin: 40px;
+        }
+
+    
+ 
+        
+ /*********************************grid 4 images***************************/
+
+ #gridnew:hover{
+    transform: translateY(-16px);
+    transition: ease-in-out;
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+}
+
+#gridimg{
+   height: auto;
+   width: 350px;
+   
+    
+
+    
+}
+
+#gridnew{
+    display: grid;
+    padding: -40px;
+    gap: 0px;
+    
+    
+    grid-template-rows:repeat(4,350px)  ;
+    
+    
+    margin-top: -30px;
+    
+    background-color: rgb(224, 130, 130);
+   
+}
+
+#gridimg:hover{
+    transform: translateY(-16px);
+    color:#1f1f1f;
+            transition: 0.1s;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+        overflow: hidden;
+        transition: 0.2s;
+       
+}
+
+/********************************************************************/
+#video-background{
+    background:linear-gradient(135deg, rgba(229, 229, 229,0.8), rgba(225,225,225,0.1));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            
+            box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+            transition: 0.5s;
+            margin-top: 30px;
+}
+
+#text-over-both-videos{
+    margin-top: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+        padding-right: 1.25rem; 
+        color: #ffffff; 
+        font-size: 1.5rem;
+        line-height: 1; 
+        white-space: nowrap; 
+        border-right-width: 4px; 
+        font-weight: bolder;
+}
+#video2{
+   
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*****************************************************************/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************************/
+/*****************************************************************************/
+/******************media-------------query------------------------------------*/
+
+
+@media (min-width: 401px) and (max-width: 1000px){
+
+    /* /*******************logo+navbar*************************************/
+    
+    .bmwlogo{
+        height: 100px;
+        margin-top: -9px;  
+    }
+    .motologo{
+        height: 160px;   
+    }
+    
+    .logos{
+        display: flex;
+        width: auto;
+        margin-left: -15px;    
+    }
+    
+    .margin-between-logos{
+       font-size: 70px;
+       color: white;
+       margin-left: 19px;
+    }
+    
+    /* /*******************logo+navbar*************************************/
+    
+    
+    
+        /**********************************************typing effect section******************************/
+    
+    
+        .typediv{
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            margin-top: -100px;
+            
+    
+        }
+    
+        #type{
+            margin-left: 30px;
+            
+            overflow: hidden; 
+            padding-right: 1.25rem; 
+            color: #ffffff; 
+            font-size: 1.8rem;
+            line-height: 1; 
+            white-space: nowrap; 
+            border-right-width: 4px; 
+            animation: 
+        typing 3s steps(19,end),
+        blink-caret .60s step-end infinite;
+        }
+    
+        @keyframes typing {
+      from { width: 0 }
+      to { width: 88% }
+    }
+    
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: rgb(255, 255, 255); }
+    }
+    
+    
+    
+        /**********************************************typing effect section******************************/
+    
+    /************************************paragraph different colours*********************/
+    
+    #vita{
+        color: rgb(51, 160, 209);
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    #vita2{
+        color: rgb(51, 160, 209);
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #vita3{
+        color:rgb(232, 115, 115);
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #vita4{
+        color:rgb(3, 220, 159);
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    
+    /***************************paragraph1****************************************/
+    
+    
+    #para{
+       max-width: 20%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #para1s{
+        
+        color: rgba(255, 255, 255, 0.497);
+        text-align: center;
+        font-size: 25px;
+        margin-top: -60px;
+        
+        
+        font-family: 'Bebas Neue', cursive;
+        font-weight: lighter ;
+    }
+    
+    #para1div{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+       
+        
+    }
+    
+    
+    #life{
+        margin-top: 120px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; 
+            padding-right: 1.25rem; 
+            color: #ffffff; 
+            font-size: 2rem;
+            margin-left: 20px;
+            font-weight: bolder;
+    
+    }
+    
+    
+    /******************************sliding gallary section------------------------*/
+    
+    #sliding-gallery-for-laptops{
+        display: none;
+    }
+    
+    
+    #custom-controls-gallery{
+        
+        margin-top: 40px;
+        padding: 30px;
+        display: block;
+    }
+    
+    
+    
+    
+        /***************************iphone section***************************/
+        #blondie{
+            visibility: hidden;
+            height: 200px;
+            
+            
+           
+            
+        }
+        
+        #blondielogo{
+            scale: 0.2;
+        }
+        
+        #blondieiphone{
+            position: absolute;
+        height: 900px;
+            display: flex;
+            justify-content: center;
+            
+           
+            
+           
+           
+        }
+        
+        #biphone{
+            position: relative;
+            height: 800px;
+            right: 320px;
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+        #blondievideo{
+            left: 240px;
+            position: relative;
+            height: 650px;
+            
+            border-radius: 70px;
+         
+          
+            
+        }
+        /***************************-------------------***************************/
+    
+        /*********************grid of 12elements--------------------*/
+    
+        #gridbap{
+            position: relative;
+            padding: 20px;
+            margin-top: 1000px;
+        }
+    
+    
+        #photogrid{
+            
+            padding: 20px;
+            background:linear-gradient(135deg, rgba(229, 229, 229,0.8), rgba(225,225,225,0.1));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 20px;
+                box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+                transition: 0.5s;
+        }
+        
+        
+        
+        
+        
+       
+        
+       
+        
+        
+        
+        #footback{
+            background-color:rgb(224, 130, 130);
+            border-radius: 30px;
+            padding: 40px;
+            margin-top: 70px;
+        }
+        
+        #fontc{
+            height: 100px;
+            color: white;
+        }
+        
+        
+        
+       
+    
+    
+        #para2s{
+            
+            font-size: 20px;
+            margin: 40px;
+            }
+    
+        
+     
+            
+     /*********************************grid 4 images***************************/
+    
+     #gridnew:hover{
+        transform: translateY(-16px);
+        transition: ease-in-out;
+        color:#1f1f1f;
+                transition: 0.1s;
+                box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+            overflow: hidden;
+            transition: 0.2s;
+    }
+    
+    #gridimg{
+       height: auto;
+       width: 350px;
+       
+        
+    
+        
+    }
+    
+    #gridnew{
+        display: grid;
+        padding: -40px;
+        gap: 0px;
+        
+        
+        grid-template-rows:repeat(4,350px)  ;
+        
+        
+        margin-top: -30px;
+        
+        background-color: rgb(224, 130, 130);
+       
+    }
+    
+    #gridimg:hover{
+        transform: translateY(-16px);
+        color:#1f1f1f;
+                transition: 0.1s;
+                box-shadow: 0 15px 50px rgba(0,0,0,0.90);
+            overflow: hidden;
+            transition: 0.2s;
+           
+    }
+    
+    /********************************************************************/
+    #video-background{
+        background:linear-gradient(135deg, rgba(229, 229, 229,0.8), rgba(225,225,225,0.1));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                
+                box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+                transition: 0.5s;
+                margin-top: 30px;
+    }
+    
+    #text-over-both-videos{
+        margin-top: 120px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; 
+            padding-right: 1.25rem; 
+            color: #ffffff; 
+            font-size: 1.5rem;
+            line-height: 1; 
+            white-space: nowrap; 
+            border-right-width: 4px; 
+            font-weight: bolder;
+    }
+    #video2{
+       
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    /*****************************************************************/
+    
+    }
